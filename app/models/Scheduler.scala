@@ -1,12 +1,11 @@
 package models
 
-/**
- * Created with IntelliJ IDEA.
- * User: damgad
- * Date: 01.04.13
- * Time: 14:41
- * To change this template use File | Settings | File Templates.
- */
-object Scheduler {
+import java.util.concurrent.{LinkedBlockingQueue, TimeUnit, ThreadPoolExecutor}
 
+object Scheduler {
+  val THREADS_NB = 100
+  private val executor_ = new ThreadPoolExecutor(THREADS_NB, Integer.MAX_VALUE, 60, TimeUnit.SECONDS, new LinkedBlockingQueue)
+  def putTask(runnable:Runnable) = executor_.execute(runnable)
+  def getScheduledNb = executor_.getQueue.size
+  def getRunningNb = executor_.getActiveCount
 }
