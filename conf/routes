@@ -3,9 +3,7 @@
 # ~~~~
 
 # Home page
-#GET     /                          controllers.Application.index
 GET     /tasks/schedule             controllers.Application.newTask(class: String)
-GET     /setthreads                 controllers.Application.setthreads(class: String)
 GET     /tasks/count-scheduled      controllers.Application.scheduled
 GET     /tasks/count-running        controllers.Application.running
 
