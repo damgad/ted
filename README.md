@@ -42,5 +42,5 @@ when TED is running. The 5 JVM languages will be printed in TED's console.
 Number of threads
 -----------------
 
-During the tests I realized that optimal number of running threads depends on the task type. For *Itemize* it was few thousand threads and for *Calculate* only tens. (on my i7 machine)
+During the tests I realized that optimal number of running threads depends on the task type. For *Itemize* it was few thousand threads and for *Calculate* only tens (on my i7 machine).
 Maximal number of running threads is preset to 100. This constant can be modified in `app/models/Scheduler.scala` source file.
