@@ -30,8 +30,8 @@ Example
 
 There are already two examples tasks with fully qualified class names:
 
-*`example.Itemize` which prints every second one of the 5 popular JVM languages
-*`example.Calculate` which simulates calculations (long loop wchich does nothing)
+* `example.Itemize` which prints every second one of the 5 popular JVM languages
+* `example.Calculate` which simulates calculations (long loop which does nothing)
 
-During the tests I realized that optimal number of running threands depends on the task type. For *Itemize* it was few thousend threads and for *Calculate* only tens.
+During the tests I realized that optimal number of running threads depends on the task type. For *Itemize* it was few thousand threads and for *Calculate* only tens.
 Maximal number of running threads is preset to 100.
