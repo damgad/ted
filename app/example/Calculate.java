@@ -1,3 +1,5 @@
+package example;
+
 import play.mvc.BodyParser;
 
 import java.util.*;

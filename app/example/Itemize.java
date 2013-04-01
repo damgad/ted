@@ -1,3 +1,4 @@
+package example;
 
 import play.mvc.BodyParser;
 
@@ -9,7 +10,6 @@ public class Itemize implements Runnable{
 
     @Override
     public void run(){
-        //Math.pow(43276544,1421276532);
         for(String language : LANGUAGES){
             wait(ONE_SECOND);
             System.out.println(String.format("JVM language: %s",language));
