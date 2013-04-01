@@ -6,7 +6,7 @@ import models._
 import java.util.concurrent._
 import org.springframework.core.env.SystemEnvironmentPropertySource
 
-object Application extends Controller {
+object TedController extends Controller {
 
   def newTask(classpath:String) = Action {
     try {
